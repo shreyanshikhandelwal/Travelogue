@@ -1,14 +1,25 @@
 h1{
-  font-family:Garamond;
-  font-size: 50px;
-  text-align: left;
+  font-family: 'Babylonica';
+  font-size: 100px;
+  text-align: center;
   text-decoration:wavy;
   margin: 0px;
-  color:rgb(52, 161, 150);
+  color:rgb(37, 11, 41);
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(74, 18, 85),
+    0 0 82px rgb(74, 18, 85),
+    0 0 92px rgb(74, 18, 85),
+    0 0 102px rgb(74, 18, 85),
+    0 0 151px rgb(74, 18, 85);
+}
+h2{
+  color: white;
 }
 body{
-  background-color: teal;
-  color: white;
+  background-color: black;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -19,18 +30,17 @@ span{
   color: rgb(0, 0, 0);
   display: inline-block;
   width: 100%;
-  
 }
 #quote{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
+  padding: 10px;
 }
 .bg{
   font-family: Georgia, 'Times New Roman', Times, serif;
   opacity: 1;
 }
 .topnav{
-  background-color:white;
   overflow: hidden;
   transition: 2s;
 }
@@ -48,4 +58,60 @@ span{
 .slideshow-container {
   max-width: 1000px;
   position: relative;
+}
+.flex1{
+  display: flex;
+}
+.flex1>div{
+  margin: 5px;
+  font-size: 30px;
+  width:50%;
+}
+.flex2{
+  display: flex;
+}
+.flex2>div{
+  margin: 5px;
+  font-size: 30px;
+  width:50%;
+}
+.flex2>div>p{
+  border-style: outset;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
